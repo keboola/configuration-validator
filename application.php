@@ -9,4 +9,5 @@ use Keboola\ConfigurationValidator\Command\ValidateConfiguration;
 
 $application = new Application();
 $application->add(new ValidateConfiguration());
+$application->add(new \Keboola\ConfigurationValidator\Command\ValidateTable());
 $application->run();

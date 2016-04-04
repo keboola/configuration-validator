@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "224faf3f974689ab382465211f14c532",
-    "content-hash": "f8b4acfbf16893e8837d64d79c877f09",
+    "hash": "dfb72aa18c8eccba6aa9eeb030b2b0e8",
+    "content-hash": "c7f9969d04e2d3fdad0022f2d78344d3",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -354,6 +354,54 @@
             "description": "Keboola CSV reader and writer",
             "homepage": "http://keboola.com",
             "time": "2014-01-31 14:10:34"
+        },
+        {
+            "name": "keboola/php-temp",
+            "version": "0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/keboola/php-temp.git",
+                "reference": "25a5b7902d3dd6e9f211071acc388b33990d6b6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/keboola/php-temp/zipball/25a5b7902d3dd6e9f211071acc388b33990d6b6e",
+                "reference": "25a5b7902d3dd6e9f211071acc388b33990d6b6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/filesystem": ">2.1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Keboola\\Temp": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Miro Cillik",
+                    "email": "miro@keboola.cz"
+                },
+                {
+                    "name": "Ondrej Vana",
+                    "email": "kachna@keboola.cz"
+                }
+            ],
+            "description": "Temp service - handles application's temporary files",
+            "keywords": [
+                "filesystem",
+                "temp"
+            ],
+            "time": "2015-12-18 13:57:34"
         },
         {
             "name": "keboola/storage-api-client",
