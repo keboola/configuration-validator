@@ -60,15 +60,15 @@ class ValidateConfiguration extends Command
         $validator = new Validator();
         $validator->check($config, $schema);
         if (!$validator->isValid()) {
-            $message = "";
+            $messages = [];
             foreach ($validator->getErrors() as $error) {
                 if ($error['property']) {
-                    $message .= $error['property'] . ' ' . $error['message'] . "\n";
+                    $messages[] = $error['property'] . ' ' . $error['message'];
                 } else {
-                    $message .= $error['message'];
+                    $messages[] = $error['message'];
                 }
             }
-            return $this->error($output, $message, 1);
+            return $this->error($output, join("\n", $messages), 1);
         }
         $output->writeln("JSON valid");
     }
