@@ -23,3 +23,7 @@ You can validate more configurations at the same time. Just prepare a table in a
     php ./application.php validate-table schema.json out.c-transformation.json-configs {STORAGE_API_TOKEN}
 
 
+
+## License
+
+MIT licensed, see [LICENSE](./LICENSE) file.
